@@ -5,6 +5,7 @@ import { fetchCardData } from '@/app/lib/data';
 import { Suspense } from 'react';
 import { LatestInvoicesSkeleton, RevenueChartSkeleton, CardsSkeleton } from '@/app/ui/skeletons';
 import CardWrapper from '@/app/ui/dashboard/cards';
+import { YoniCounter } from '@/app/ui/yoni-counter';
 
 export default async function Page() {
   const {
@@ -32,6 +33,7 @@ export default async function Page() {
           <LatestInvoices />
         </Suspense>
       </div>
+      <YoniCounter />
     </main>
   );
 }
